@@ -1,0 +1,52 @@
+<Frame Grid.Row="2" Grid.Column="0"
+                        Style="{StaticResource EspReclamacao}">
+
+                        <Grid RowSpacing= "5" ColumnSpacing="5" Padding="0">
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="2" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="gosto_polegar" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            
+
+                            <ImageButton Grid.Row="4" Grid.Column="3"
+                                     Style="{StaticResource BtnCurti}"
+                                      Source="nao_gosto_polegar" Aspect="AspectFit"
+                                    HorizontalOptions="Center"/>
+                                
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                   Text="Rafaela Lanches"
+                                   FontSize="25">
+                            </Label>
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="Bom dia"
+                                   FontSize="20"></Label>
+
+                            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="meu vizinho ta tocando aaaa kids do felps e o cellbit em LOOP!!!!!! Deus abençoe, que a policia chege a tempo "
+                                   FontSize="15"></Label>
+
+                        </Grid>
+
+                    </Frame>

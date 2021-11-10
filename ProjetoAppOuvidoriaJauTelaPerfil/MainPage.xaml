@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoAppOuvidoriaJauTelaPerfil.MainPage"
+             Title="App Ouvidoria Jaú"
+             BackgroundColor="DarkSlateGray">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="EspReclamacao" TargetType="Frame">
+
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="BackgroundColor" Value="#444544"/>
+
+                <Setter Property="HeightRequest" Value="150"/>
+                <Setter Property="WidthRequest" Value="300"/>
+
+                <Setter Property="Padding" Value="10"/>
+
+            </Style>
+
+            <Style x:Key="BtnCurti" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#444544"/>
+            </Style>
+            <Style x:Key="BtnBarra" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#3076AE"/>
+            </Style>
+            <Style x:Key="btnFiltro" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#707070"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout BackgroundColor="White">
+        <Image Source="perfil_pequeno.png" 
+               WidthRequest="100" 
+               HeightRequest="100" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"              
+               />
+        
+        <Label Text="Maria da Silva"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="30"
+               />
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Nome Completo"/>
+                <TableSection Title="Email"/>
+                <TableSection Title="CPF"/>
+                <TableSection Title="RG"/>
+            </TableRoot>
+        </TableView>
+        
+        <Label Text="1 Denúncias, 1 Em andamento, 0 Resolvidos " 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="Black"/>
+
+        <StackLayout>
+            <ScrollView>
+                <Grid RowSpacing="30" ColumnSpacing="10" Padding="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="0" Grid.Column="0"
+                        Style="{StaticResource EspReclamacao}">
+
+                        <Grid RowSpacing= "5" ColumnSpacing="5" Padding="0">
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="0" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="place" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="1" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="chat_bubble" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="2" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="gosto_polegar" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="3"
+                                     Style="{StaticResource BtnCurti}"
+                                      Source="nao_gosto_polegar" Aspect="AspectFit"
+                                    HorizontalOptions="Center"/>
+
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                   Text="Reclamação"
+                                   FontSize="25"
+                                   FontAttributes="Bold">
+                            </Label>
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="Bom dia"
+                                   FontSize="20"></Label>
+
+                            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="Minha rua tem mais furo que uma peneira, não aguento mais estourar o step do meu carro, por favor arrumem isso, grata!"
+                                   FontSize="15"></Label>
+
+                            
+
+                        </Grid>
+                    </Frame>
+
+
+                    <Frame Grid.Row="1" Grid.Column="0"
+                        Style="{StaticResource EspReclamacao}">
+
+                        <Grid RowSpacing= "5" ColumnSpacing="5" Padding="0">
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="0" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="place" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="1" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="chat_bubble" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="2" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="gosto_polegar" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="3"
+                                     Style="{StaticResource BtnCurti}"
+                                      Source="nao_gosto_polegar" Aspect="AspectFit"
+                                    HorizontalOptions="Center"/>
+
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                   Text="Reclamação"
+                                   FontSize="25"
+                                   FontAttributes="Bold">
+                            </Label>
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="Boa noite"
+                                   FontSize="20"></Label>
+
+                            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="meu vizinho ta tocando aaaa kids do felps e o cellbit em LOOP!!!!!! Deus abençoe, que a policia chege a tempo "
+                                   FontSize="15"></Label>
+
+                        </Grid>
+                    </Frame>
+
+                    <Frame Grid.Row="2" Grid.Column="0"
+                        Style="{StaticResource EspReclamacao}">
+
+                        <Grid RowSpacing= "5" ColumnSpacing="5" Padding="0">
+                            <Grid.ColumnDefinitions>
+
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="0" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="place" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="1" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="chat_bubble" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="4" Grid.Column="2" 
+                                    Style="{StaticResource BtnCurti}" 
+                                     Source="gosto_polegar" Aspect="AspectFit"
+                                   HorizontalOptions="Center"/>
+
+
+
+                            <ImageButton Grid.Row="4" Grid.Column="3"
+                                     Style="{StaticResource BtnCurti}"
+                                      Source="nao_gosto_polegar" Aspect="AspectFit"
+                                    HorizontalOptions="Center"/>
+
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+                                   Text="Denúncia"
+                                   FontSize="25"
+                                   FontAttributes="Bold">
+                            </Label>
+
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="Carros"
+                                   FontSize="20"></Label>
+
+                            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"
+                                   Text="As moto da rua fica fazzendo DANRANRANRANARAN de noite, não aguento mais. Obrigado"
+                                   FontSize="15"></Label>
+
+                        </Grid>
+                    </Frame>
+                </Grid>
+
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>
